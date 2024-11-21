@@ -1,0 +1,194 @@
+/* CSS Navbar */
+
+nav {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(118, 69, 59);
+    border-bottom: 4px ridge rgb(248, 250, 229);
+    box-shadow: black 0px 0px 10px 5px;
+    color: rgb(248, 250, 229);
+}
+
+.nav__header {
+    display: flex;
+    align-items: center;
+}
+
+.button_menu {
+    display: none;
+}
+
+.nav__header__logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(/images/background.webp);
+    box-shadow: 
+    rgb(248,250,229) 0 0 0 1px,
+    rgb(50,25,5) 0px 3px 10px 1px;
+
+}
+
+.nav__header__h1 {
+    font-size: 18px;
+    padding: 0 10px;
+    color: rgb(248, 250, 229);
+    text-decoration: underline white;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
+}
+
+.nav__ul__li:first-of-type {
+    display: none;
+}
+
+.container_nav_links {
+    display: flex;
+    width: 720px;
+    padding: 5px;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav__ul__li {
+    list-style: none;
+    width: 125px;
+}
+
+.nav__ul__li__a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(50, 25, 5);
+    font-weight: 600;
+    width: 100%;
+    padding: 5px 0;
+    border: 3px inset rgb(248, 250, 229);
+    background-color: rgb(248, 250, 229);
+    box-shadow:
+        0 0 0 1px rgb(50, 25, 5) inset,
+        0 0 5px 1px rgb(50, 25, 5);
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container_nav_links {
+        display: none;
+    }
+
+    .nav_links {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 275px;
+        transform: translateX(-275px);
+    }
+
+    .nav__ul__li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 175px;
+    }
+
+    .nav__ul__li__a {
+        text-decoration: none;
+        color: rgb(50, 25, 5);
+        font-weight: 600;
+        letter-spacing: 0.75px;
+        width: 100%;
+        text-align: center;
+        padding: 7px 0;
+        border: 3px inset rgb(248, 250, 229);
+        background-color: rgb(177, 148, 112);
+        box-shadow: 0 0 0 1px rgb(50, 25, 5) inset;
+        border-radius: 20px;
+    }
+
+    .button_menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: rgb(67, 118, 108);
+        border: 1px inset rgb(248, 250, 229);
+        box-shadow:
+            0 0 1px 2px rgb(248, 250, 229) inset,
+            0 0 5px 1px rgba(50, 25, 5, 0.5);
+        border-radius: 7px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .wrapper_span_button_menu {
+        display: grid;
+        place-items: center;
+        row-gap: 4px;
+        width: 75%;
+    }
+
+    .wrapper_span_button_menu .line {
+        width: 100%;
+        height: 3px;
+        background-color: rgb(248, 250, 229);
+    }
+
+    .nav__ul__li:first-of-type {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .logo_menu_burger {
+        display: flex;
+        margin-bottom: 10px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: url(/images/background.webp);
+        box-shadow: 
+        rgb(248,250,229) 0 0 0 1px,
+        rgb(50,25,5) 0px 3px 10px 1px;
+    }
+
+    .show_container_nav_links {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+    }
+
+    .show_nav_links {
+        padding: 25px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        width: 250px;
+        height: 100vh;
+        background-color: rgb(67, 118, 108);
+        border-left: 2px ridge rgb(248, 250, 229);
+        box-shadow: 0 0 10px 5px rgb(50, 25, 5);
+        transform: translateX(0);
+        transition: all 0.5s;
+    }
+}
