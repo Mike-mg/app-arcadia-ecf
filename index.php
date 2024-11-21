@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Arcadia Zoo, an animal park to spend well time with family or friends">
+    <link rel="icon" type="image/png" href="./assets/navbar/images_&_logos/arcadia_logo_75px.webp">
     <link rel="stylesheet" href="./css/reset_and_fonts.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./assets/navbar//css/navbar.css">
