@@ -16,12 +16,10 @@
             <aside>
                 <p>Cette espace est réservé aux membres du zoo Arcadia</p>
                 <a href="/index.php">Revenir à l'accueil</a>
-                < /aside>
+                </aside>
         </header>
         <button class="button_login" type="button">Se Connecter</button>
     </section>
-
-
 
     <section class="container_form_login">
         <form class="form_login" action="" method="get">
@@ -29,15 +27,9 @@
             <input class="form_login_input_email" type="email" placeholder="Votre Email">
             <input class="form_login_input_password" type="password" placeholder="Votre mot de passe">
             <button class="form_login_button" type="submit">Connexion</button>
-            <a class="form_login_a" href="/index.php">Revenir à l'accueil</a>
-
-
-
+            <a class="form_login_a" href="/app-arcadia-ecf/index.php">Revenir à l'accueil</a>
         </form>
     </section>
-
-
-
 </body>
 
 </html>
