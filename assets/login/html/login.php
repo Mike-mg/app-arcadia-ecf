@@ -16,7 +16,7 @@
             <aside>
                 <p>Cette espace est réservé aux membres du zoo Arcadia</p>
                 <a href="../../../index.php">Revenir à l'accueil</a>
-                < /aside>
+                </aside>
         </header>
         <button class="button_login" type="button">Se Connecter</button>
     </section>
