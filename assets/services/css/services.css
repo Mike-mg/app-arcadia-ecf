@@ -1,0 +1,300 @@
+/* CSS Services */
+
+.container_services {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    color: rgb(50, 25, 5);
+    padding: 50px 20px;
+    background-color: rgba(248,250,229,0.8);
+    box-shadow: rgb(50, 25, 5) 0 0 10px 2px;
+    backdrop-filter: blur(5px);
+} 
+
+.container_services__header__h4 {
+    width: min(225px, 275px);
+    margin: auto;
+    text-align: center;
+    background-color: rgb(67,118,108);
+    border: 3px inset rgb(248, 250, 229);
+    border-radius: 15px;
+    box-shadow: rgb(50, 25, 5) 0 0 5px 2px inset;
+    color:rgb(248,250,229);
+    padding: 10px 0;
+    text-shadow:1px 1px 1px rgb(50,25,5);
+}
+
+.services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.services__card__visit,
+.services__card__child_entertainment,
+.services__card__small_train,
+.services__card__restaurant {
+    display: grid;
+    grid-template-columns: 140px 125px;
+    grid-template-rows: 125px, 125px;
+    place-items: center;
+    background-color: rgb(177, 148, 112);
+    border: 3px ridge rgb(248,250,229);
+    border-radius: 15px;
+    box-shadow:
+    0 0 2px 1px rgb(50,25,5) inset,
+    0 5px 10px 1px rgb(50,25,5);
+}
+
+.services__card__header__visit__h4,
+.services__card__header__child_entertainment__h4,
+.services__card__header__small_train__h4,
+.services__card__header__restaurant__h4 {
+    color: rgb(50,25,5);
+    font-weight: 600;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.services__card__visit__img,
+.services__card__child_entertainment__img,
+.services__card__small_train__img,
+.services__card__restaurant__img {
+    width: 138px;
+    height: 91px;
+    border-radius: 15px 0 0 15px;
+    border-right: 2px ridge rgb(248,250,229);
+    grid-row: 1/3;
+    grid-column: 1;
+}
+
+.services__card__footer__visit__a,
+.services__card__footer__child_entertainment__a,
+.services__card__footer__small_train__a,
+.services__card__footer__restaurant__a {
+    width: 75%;
+    padding: 5px;
+    text-align: center;
+    background-color:rgb(118, 69, 59);
+    border: 1px solid rgb(50,25,5);
+    border-radius: 25px;
+    box-shadow: inset rgba(248,250,229, 0.5) 0 0 0 2px;
+    color: rgb(248, 250, 229);
+    font-size: small;
+    text-decoration: none;
+    font-weight: 600;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+@media screen and (min-width: 768px) {
+    .container_services {
+    width: min(100%, 700px);
+    border: 5px inset rgb(248, 250, 229);
+    border-radius: 15px;
+    box-shadow:
+        inset 0 0 3px 1px rgb(50, 25, 5),
+        0 0 10px 5px rgb(50, 25, 5);
+    } 
+}
+
+#details_visits,
+#details_animation,
+#small_train,
+#restaurant {
+    scroll-margin-top: 125px;
+}
+
+.presentation_services {
+    margin: 100px auto;
+    font-weight: 700;
+    color: rgb(50, 25, 5);
+    font-size: 14px;
+    padding: 25px;
+    background-color: rgba(248, 250, 229, 0.8);
+    box-shadow: rgb(50, 25, 5) 0 0 10px 2px;
+    backdrop-filter: blur(5px);
+}
+
+.presentation_services h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.presentation_services p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.container_details_visit,
+.container_details_child_animation,
+.container_details_small_train,
+.container_details_restaurant {
+    margin: 100px auto;
+    width: min(100%, 576px);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: rgb(50, 25, 5);
+    padding: 50px 20px;
+    background-color: rgba(248, 250, 229, 0.8);
+    box-shadow: rgb(50, 25, 5) 0 0 10px 2px;
+    backdrop-filter: blur(5px);
+}
+
+.container_services__header__h4,
+.container_details_visit__header__h4,
+.container_child_animation__header__h4,
+.container_small_train__header__h4,
+.container_restaurant__header__h4 {
+    width: min(275px, 350px);
+    margin: auto;
+    text-align: center;
+    background-color: rgb(67, 118, 108);
+    border: 3px inset rgb(248, 250, 229);
+    border-radius: 15px;
+    box-shadow: rgb(50, 25, 5) 0 0 5px 2px inset;
+    color: rgb(248, 250, 229);
+    padding: 10px 0;
+    text-shadow: 1px 1px 1px rgb(50, 25, 5);
+}
+
+.container_visit,
+.container_child_animation,
+.container_small_train,
+.container_restaurant {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.visit_hour,
+.visit_day,
+.child_animation,
+.small_train,
+.restaurant_fastfood,
+.restaurant_gourmet {
+    width: min(100%, 450px);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgb(67, 118, 108);
+    border: 3px ridge rgb(248, 250, 229);
+    box-shadow: inset rgb(50, 25, 5) 0 0 5px 2px;
+    border-radius: 15px;
+    color: rgb(248, 250, 229);
+}
+
+.visit_hour header,
+.visit_day header,
+.child_animation header,
+.small_train header,
+.restaurant_fastfood header,
+.restaurant_gourmet header {
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgb(118, 69, 59);
+    font-weight: 600;
+    color: rgb(248, 250, 229);
+    border: 1px solid rgb(248, 250, 229);
+    text-align: center;
+}
+
+.visit_hour aside p:not(:last-child),
+.visit_day aside p:not(:last-child),
+.child_animation aside p:not(:last-child),
+.small_train aside p:not(:last-child),
+.restaurant_fastfood aside p:not(:last-child),
+.restaurant_gourmet aside p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.visit_hour footer,
+.visit_day footer,
+.child_animation footer,
+.small_train footer,
+.restaurant_fastfood footer,
+.restaurant_gourmet footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+
+.visit_hour footer p,
+.visit_day footer p,
+.child_animation footer p,
+.small_train footer p,
+.restaurant_fastfood footer p,
+.restaurant_gourmet footer p {
+    width: 175px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgb(118, 69, 59);
+    font-weight: 600;
+    color: rgb(248, 250, 229);
+    border: 1px solid rgb(248, 250, 229);
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    
+    .presentation_services {
+        width: min(75%, 720px);
+        border: 5px inset rgb(248, 250, 229);
+        border-radius: 15px;
+        box-shadow:
+            inset 0 0 3px 1px rgb(50, 25, 5),
+            0 0 10px 5px rgb(50, 25, 5);
+    }
+    
+    .container_details_visit,
+    .container_details_child_animation,
+    .container_details_small_train,
+    .container_details_restaurant{
+        width: min(75%, 576px);
+        display: flex;
+        border: 5px inset rgb(248, 250, 229);
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        box-shadow:
+            inset 0 0 3px 1px rgb(50, 25, 5),
+            0 0 10px 5px rgb(50, 25, 5);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .container_details_visit,
+    .container_details_restaurant {
+        width: min(90%, 1100px);
+        display: flex;
+        border: 5px inset rgb(248, 250, 229);
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        box-shadow:
+            inset 0 0 3px 1px rgb(50, 25, 5),
+            0 0 10px 5px rgb(50, 25, 5);
+    }
+
+    .visit_hour,
+    .visit_day,
+    .child_animation,
+    .small_train,
+    .restaurant_fastfood,
+    .restaurant_gourmet {
+        height: 375px;
+    }
+}
