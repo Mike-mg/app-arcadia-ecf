@@ -1,0 +1,42 @@
+/* CSS index.php */
+
+.presentation {
+    width: min(100%, 576px);
+    margin: 100px auto;
+    font-weight: 700;
+    color: rgb(50, 25, 5);
+    font-size: 14px;
+    padding: 25px;
+    background-color: rgba(248, 250, 229, 0.8);
+    box-shadow: rgb(50, 25, 5) 0 0 10px 2px;
+    backdrop-filter: blur(5px);
+}
+
+.presentation h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.presentation p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 577px) {
+
+    .presentation {
+        width: min(75%, 720px);
+        margin: 100px auto;
+        font-weight: 700;
+        color: rgb(50, 25, 5);
+        font-size: 14px;
+        padding: 25px;
+        background-color: rgba(248, 250, 229, 0.8);
+        border: 5px inset rgb(248, 250, 229);
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        box-shadow:
+            inset 0 0 3px 1px rgb(50, 25, 5),
+            0 0 10px 5px rgb(50, 25, 5);
+    }
+}
