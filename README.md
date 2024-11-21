@@ -1,6 +1,12 @@
 # Evaluation en cours de formation Studi
 
 ### Nom de l'application : App-arcadia-ecf
+
+1. Installer l'environnement de travail (LAMP)
+2. Déploiement local et obtenir le projet via le repository Github
+3. Déploiement en production du site via l'hébergeur O2switch  
+4. Liens utiles
+
 ---
 ###
 1. Installer l'environnement de travail (LAMP)
@@ -71,7 +77,6 @@
 
         - `apt install git`
 ##
-
 2. Déploiement local et obtenir le projet via le repository Github
 
     - Créer un dossier pour cloner le projet
@@ -125,7 +130,6 @@
         - Redémarrer apache
 
             - `systemctl reload apache2`
-
 ##
 3. Déploiement en production du site via l'hébergeur O2switch  
 
@@ -150,31 +154,9 @@
         - Dans Cpanel section "Sécurité", choisir "Let's Encrypt SSL"
         - Sélectionner le site du projet et clicker sur "Générer"
         - Quelques miniutes plus tard, le site aura la certification Let's Encrypt et sera sécurisé
+##
+4. Liens utiles
 
-
-
-
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
-
-
-Trello : : https://trello.com/b/Gj4oYQbu/ecf
+    - Trello
+        - https://trello.com/b/kGICHbPl/arcadia-zoo
 
