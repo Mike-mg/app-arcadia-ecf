@@ -6,6 +6,8 @@ body {
   background-image: url(/assets/login/images_&_logos/background_login_mobile.webp);
   background-position: -125px;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container_login {
@@ -14,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 350px;
+  gap: 300px;
 }
 
 header {
