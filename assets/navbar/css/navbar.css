@@ -29,11 +29,9 @@ nav {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-image: url(/images/background.webp);
     box-shadow: 
     rgb(248,250,229) 0 0 0 1px,
     rgb(50,25,5) 0px 3px 10px 1px;
-
 }
 
 .nav__header__h1 {
